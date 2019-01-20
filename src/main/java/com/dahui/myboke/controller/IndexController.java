@@ -8,11 +8,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+/**
+ *
+ */
 public class IndexController extends BaseController{
     private Logger logger = LoggerFactory.getLogger(BaseController.class);
+    /**
+     *
+     */
     @RequestMapping(value="/hello" , method = RequestMethod.GET)
     public String index(){
         logger.info("进入了index方法！");
-        return "Hello";
+
+        return "hello";
     }
 }
