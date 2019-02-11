@@ -11,6 +11,7 @@ public class MybokeApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("--------------");
 	}
 
 }
