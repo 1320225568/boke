@@ -18,7 +18,7 @@ public class IndexController extends BaseController{
     /**
      *
      */
-    @RequestMapping(value="hello" , method = RequestMethod.GET)
+    @RequestMapping(value="/hello" , method = RequestMethod.GET)
     public ModelAndView index(ModelAndView modelAndView){
         logger.info("进入了index方法！");
         modelAndView.setViewName("hello");
